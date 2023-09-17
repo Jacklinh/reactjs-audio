@@ -1,42 +1,50 @@
-#root {
-  max-width: 1280px;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+main {
+  padding: 80px 0;
+}
+.container {
+  width: 1200px;
   margin: 0 auto;
-  padding: 2rem;
+}
+.layout_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.layout_left {
+  flex-basis: 60%;
+  margin-right: 30px;
+}
+.layout_right {
+  flex: 1;
+}
+
+.playing_box {
+  background-color: #fafafa;
+  border-radius: 20px;
+  padding: 20px;
+  min-height: 400px;
+}
+.playing_title, .audios__list_title {
+  font-size: 30px;
+  display: block;
   text-align: center;
-}
+  margin-bottom: 20px;
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.audios__list_title {
+  text-align: left;
+ 
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.playing_now {
+  background-color: #fff;
+  border-radius: 10px;
+  min-height: 300px;
+  margin: 30px auto;
+  padding: 30px 0;
 }
